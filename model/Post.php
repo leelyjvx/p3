@@ -7,6 +7,11 @@ class Post {
 	private $_content;
 	private $_postdate;
 
+	public function __construct($title, $content) {
+		$this->_title = $title;
+		$this->_content = $content;
+	}
+
 	public function getID() {
 		return $this->_id;
 	}
