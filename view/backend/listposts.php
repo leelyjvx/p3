@@ -7,18 +7,22 @@
 
 <?php foreach ($posts as $post) { ?>
 	
-	<p>Titre : <?= $post->getTitle()?></p>
+	<p> <a href="index.php?title=<?= $post->getTitle() ?>" > Titre : <?= $post->getTitle()?> </a></p>
 	<p><?= $post->getContent() ?></p>
 
-	<p><form action="index.php?action=deletepost" method="post">
-		<input type="submit" name="delete_post" value="Supprimer">
-	</form>
-	<form action="index.php?action=updatepost" method="post">
-		<input type="submit" name="update_post" value="Modifier">
-	</form></p>
+	<p>
+		<form action="index.php?action=postid" method="get">
+			<input type="submit" name="postid" value="Lire l'article">
+		</form>
+		<form action="index.php?action=deletepost" method="post">
+			<input type="submit" name="delete_post" value="Supprimer">
+		</form>
+		<form action="index.php?action=updatepost" method="post">
+			<input type="submit" name="update_post" value="Modifier">
+		</form></p>
 
-<?php }?>
+	<?php }?>
 
-<?php $content = ob_get_clean() ?>
+	<?php $content = ob_get_clean() ?>
 
-<?php require('template.php') ?>
+	<?php require('template.php') ?>

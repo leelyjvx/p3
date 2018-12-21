@@ -20,7 +20,7 @@ class PostManager extends Manager {
 	public function read() {
 
 		$posts = [];
-		$req = $this->_db->query('SELECT title, content FROM posts');
+		$req = $this->_db->query('SELECT id, title, content FROM posts');
 		while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
 			$posts[] = new Post($data['title'], $data['content']);
 		}

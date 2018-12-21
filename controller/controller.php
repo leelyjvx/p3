@@ -21,6 +21,7 @@ function listPosts() { // Affichage de tous les posts
 
 function addPost() {
 
+	$titre = 'Création d\'article';
 	require('../view/backend/addpost.php');
 }
 
@@ -34,10 +35,22 @@ function createPost() {
 	var_dump($try);
 }
 
-function updatePost() {
+function read() {
 
+	echo $post->getTitle();
+	$manager = new PostManager();
+	$try = $manager->readID($_GET['id']);
+	var_dump($try);
+}
+
+function updatePost() {
+	echo "maj";
 }
 
 function deletePost() {
 
+	echo $post->getID();
+
+
 }
+
