@@ -10,5 +10,9 @@ if (isset($_GET['action'])) {
 	if ($_GET['action'] === 'listposts') {
 		listPosts();
 	}
+
+	if ($_GET['action'] === 'addpost') {
+		addPost();
+	}
 }
 

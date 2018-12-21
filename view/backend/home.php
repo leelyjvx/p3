@@ -5,7 +5,7 @@
 
 <h2> Articles </h2>
 
-<p><a href="addpost.php"> Créer un article. </a></p>
+<p><a href="index.php?action=addpost"> Créer un article. </a></p>
 <p><a href="index.php?action=listposts"> Lire les articles. </a></p>
 
 <p> Retrouver un article. </p>
