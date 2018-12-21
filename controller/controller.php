@@ -3,22 +3,16 @@
 require_once('../model/PostManager.php');
 require_once('../model/Post.php');
 
-function admin() {
+
+
+
+function admin() { // Affichage de la page d'administration
 
 	require('../view/backend/home.php');
 }
 
-function add() {
 
-	require('../view/backend/addpost.php');
-	$post = new Post($_POST['title'], $_POST['content']);
-	var_dump($post);
-	$manager = new PostManager();
-	$add = $manager->add($post);
-	var_dump($add);
-}
-
-function listPosts() {
+function listPosts() { // Affichage de tous les posts
 
 	$manager = new PostManager();
 	$posts = $manager->read();
