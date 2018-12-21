@@ -9,12 +9,13 @@
 	
 	<p>Titre : <?= $post->getTitle()?></p>
 	<p><?= $post->getContent() ?></p>
-	<form action="index.php?action=deletepost" method="post">
+
+	<p><form action="index.php?action=deletepost" method="post">
 		<input type="submit" name="delete_post" value="Supprimer">
 	</form>
 	<form action="index.php?action=updatepost" method="post">
 		<input type="submit" name="update_post" value="Modifier">
-	</form>
+	</form></p>
 
 <?php }?>
 
