@@ -9,7 +9,7 @@
 
 	<h2> Articles </h2>
 
-	<p><a href="#"> Créer un article. </a></p>
+	<p><a href="addpost.php"> Créer un article. </a></p>
 	<p><a href="#"> Lire les articles. </a></p>
 
 	<p> Retrouver un article. </p>
