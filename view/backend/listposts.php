@@ -6,6 +6,7 @@
 <h2>  Articles </h2>
 
 <?php foreach ($posts as $post) { ?>
+
 	
 	<p> <a href="index.php?title=<?= $post->getTitle() ?>" > Titre : <?= $post->getTitle()?> </a></p>
 	<p><?= $post->getContent() ?></p>

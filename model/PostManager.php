@@ -12,8 +12,8 @@ class PostManager extends Manager {
 
 	public function addPost($post) {
 
-		$req = $this->_db->prepare('INSERT INTO posts(id, title, content, postdate) VALUES (?, ?, ?, NOW())');
-		$req->execute(array($post->getID(), $post->getTitle(), $post->getContent()));
+		$req = $this->_db->prepare('INSERT INTO posts(title, content, postdate) VALUES (?, ?, NOW())');
+		$req->execute(array($post->getTitle(), $post->getContent()));
 		return $this->_db->lastInsertId();
 	}
 
