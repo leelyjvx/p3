@@ -1,0 +1,65 @@
+body, html {
+	text-align: center;
+	height: 100%;
+}
+
+body {
+	background-image: url('../pictures/back7.jpg');
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.intro {
+	background-color: white;
+}
+
+.navbar{
+	background-color: black;
+}
+
+.navbar, ul, a {
+	font-family: 'Chivo';
+	color: #8395a7;
+}
+
+.navbar, ul, a:hover {
+	color: #48dbfb;
+}
+
+.navbar, ul, a:visited {
+	color: pink;
+}
+
+nav {
+	background-color: rgba(10, 189, 227,0.6);
+}
+
+
+.author {
+	font-family: 'Mr Dafoe';
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+	color: white;
+}
+
+.flex {
+	margin: auto;
+	width: 100%;
+	padding-top: 150px;
+	height: 800px;
+}
+
+#intro {
+	font-size: 15px;
+	height: 100%;
+	padding-top: 150px;
+}

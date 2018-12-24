@@ -4,7 +4,9 @@ require_once('../model/PostManager.php');
 require_once('../model/Post.php');
 
 
-
+function intro() {
+	require('../view/frontend/intro.php');
+}
 
 function admin() { // Affichage de la page d'administration
 
